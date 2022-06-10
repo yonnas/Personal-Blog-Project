@@ -65,3 +65,13 @@ figcaption {
 .author {
     list-style-type: none;
 }
+
+@media (max-width: 680px) {
+  .post {
+    display: grid;
+    max-width: 1000px;
+    margin: 200px auto;
+    gap: 10px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  }
+}
